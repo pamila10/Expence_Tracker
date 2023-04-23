@@ -1,0 +1,35 @@
+.incExp {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  box-shadow: var(--box-shadow);
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 17px;
+    background-color: var(--secondary-bg-color);
+
+    @media screen and (min-height: 720px) {
+      padding: 20px;
+    }
+
+    &:first-of-type {
+      border-right: 1px solid var(--border-color);
+    }
+  }
+
+  &__title {
+    &_plus {
+      color: var(--success-bg-color);
+    }
+
+    &_minus {
+      color: var(--danger-bg-color);
+    }
+  }
+}

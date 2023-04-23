@@ -1,0 +1,42 @@
+.list {
+  max-height: 425px;
+  padding: 0;
+  margin-bottom: 40px;
+  list-style-type: none;
+  overflow-y: auto;
+  color: var(--text-color);
+
+  &__item {
+    background-color: var(--secondary-bg-color);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 8px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.01);
+    }
+
+    &.plus {
+      border-right: 5px solid var(--success-bg-color);
+    }
+
+    &.minus {
+      border-right: 5px solid var(--danger-bg-color);
+    }
+  }
+
+  &__delItemBtn {
+    margin-right: -5px;
+    color: var(--danger-bg-color);
+  }
+
+  &__itemWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 20px;
+  }
+}
